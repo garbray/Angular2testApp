@@ -1,0 +1,17 @@
+<div class="col s12 m7"  *ngIf="movie">
+  <h2 class="header">{{ movie.name }}</h2>
+  <div class="card horizontal">
+    <div class="card-image">
+      <img [src]="movie.image">
+    </div>
+    <div class="card-stacked">
+      <div class="card-content">
+        <p>description: {{movie.description}}</p>
+        <p>popularity: {{movie.popularity}}</p>
+      </div>
+      <div class="card-action">
+        <a (click)="goBack()">Go back</a>
+      </div>
+    </div>
+  </div>
+</div>

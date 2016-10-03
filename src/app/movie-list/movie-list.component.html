@@ -1,0 +1,3 @@
+<div class="collection">
+  <a href="" *ngFor="let movie of movies" (click)="gotoDetail(movie, $event)" class="collection-item">{{ movie.name }}<span class="badge">{{ movie.popularity }}</span></a>
+</div>
